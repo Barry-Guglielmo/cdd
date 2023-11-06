@@ -1,0 +1,4 @@
+*.ipynb
+config.py
+*.mol
+*.sdf
