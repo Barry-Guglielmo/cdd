@@ -18,9 +18,8 @@ def SimpleSchema_Session(SIMPLE_SCHEMA_DB_CONFIG):
                         host=SIMPLE_SCHEMA_DB_CONFIG["host"])
 
 def CDD_Session(CDD_API_CONFIG):
-        session = Session(CDD_API_CONFIG["url"],CDD_API_CONFIG["user"],CDD_API_CONFIG["password"])
-        session.login()
-        return session
+    session = Session(CDD_API_CONFIG["url"],CDD_API_CONFIG["api_token"])
+    return session
 
 class CDD_Compounds:
     '''
